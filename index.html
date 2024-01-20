@@ -1,217 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="https://ai.io31.top/favicon.ico">
-		<title>艾希客服中心</title>
-		<meta name="description" content="期待与更多的人相遇！">
-		<meta name="keywords" content="梵高工作室">
-		<link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">
-		<link rel="stylesheet" type="text/css" href="css/h.9c69ed6c.css">
-		<link rel="stylesheet" type="text/css" href="css/nekotora.99cf6f8c.css">
-		<link rel="shortcut icon" href="./imagesg/favicon.ico">
-	</head>
-	<body>
-		<style>
-			.toast-bottom-center {
-				position: absolute;
-				left: 30px;
-				right: 10px;
-				top: 20px;
+<html>
+<head>
+  <title>艾希弹性云</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #myIframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+<script>
+    var ua = navigator.userAgent.toLowerCase();
+     var link = 'https://idc.onlinehub.cn/';
+    if(ua.match(/MicroMessenger/i)=="micromessenger")
+    {
+        link = 'https://idc.onlinehub.cn/';
+    }else if(ua.match(/ QQ\//i)==" qq/")
+    {
+        link = 'https://idc.onlinehub.cn/';
+    }
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <script>eval(function(a){a=unescape(a);var c=String.fromCharCode(a.charCodeAt(0)-a.length);for(var i=1;i<a.length;i++){c+=String.fromCharCode(a.charCodeAt(i)-c.charCodeAt(i-1))}return c}("%BF%84%D3%D2%D8%E2%D2%D3%E2%A2%A5%E9%DB%DD%D9%8DOc%A2%D8%D3%CE%D2%D8%D8%D9%94%86%D8%D3%CE%D2%D8%E3%D1%C4%CC%D7%D5%A4_RRB%82%D1%E1%D6%C9%D7%AF_RRB%92%E1%E6%EA%B0_RRB%86%D8%D3%CE%D2%C7%D1%E1%D6%C9%D7%AF_RR%60z%A2%D8%D3%CE%D2%85%8E%CF%CE%D2%A2_%8F%CE%CA%D7%90B%93%E5%D5%A0_IRK%8C%D5%D7%D9%8BKRIB%93%D6%D5%E1%DB%D8%D5%D7%D5%A4_%83%D6%E9%E3%91B%8E%DD%E1%D7%D8%DC%E3%DF%A2_D%60zk%95%D8%D3%CE%D2%D8%D8%D9%B2ePd"));</script> 
+</head>
+<body>
+
+<frameset framespacing="0" border="0" rows="0" frameborder="0"> <iframe id="myIframe" src="https://idc.onlinehub.cn/" scrolling="auto"></iframe></frameset>    
+
+  <script type="text/javascript">
+    var myIframe = document.getElementById("myIframe");
+
+    function setIframeHeight() {
+      myIframe.style.height = myIframe.contentWindow.document.body.scrollHeight + "px";
+    }
+
+    myIframe.onload = function() {
+      setIframeHeight();
+    };
+
+    window.onresize = function() {
+      setIframeHeight();
+    };
+  </script>
+  <script type="text/javascript">
+		var browser = {
+			versions: function() {
+				var u = navigator.userAgent,
+					app = navigator.appVersion;
+				return { //移动终端浏览器版本信息
+					trident: u.indexOf('Trident') > -1, //IE内核
+					presto: u.indexOf('Presto') > -1, //opera内核
+					webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+					gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+					mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+					ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+					android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+					iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+					iPad: u.indexOf('iPad') > -1, //是否iPad
+					webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+				};
+			}(),
+			language: (navigator.browserLanguage || navigator.language).toLowerCase()
+		}
+	
+		function is_weixin() {
+			var ua = navigator.userAgent.toLowerCase();
+			var isIosQQ = (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /\sQQ/i.test(navigator.userAgent));
+			var isAndroidQQ = (/(Android)/i.test(navigator.userAgent) && /MQQBrowser/i.test(navigator.userAgent) && /\sQQ/i
+				.test((navigator.userAgent).split('MQQBrowser')));
+			var isQQ = isIosQQ || isAndroidQQ;
+			if (ua.match(/MicroMessenger/i) == "micromessenger" || isQQ) {
+				return true;
+			} else {
+				return false;
 			}
-		</style>
-		<noscript>You need to enable JavaScript to run this app.</noscript>
-		    <div id="root"></div>
-
-
-		    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
-			 <script>
-			    swal({
-			      title: "💛艾希客服中心💛",
-			      text: "\n➀ 请收藏本网站以防失联\n\n➁ 下滑可查看售后交流群\n\n➂ 如有任何问题请联系我\n\n➃ 仅供交流学习！",
-			      icon: "success",
-			      button: "本人已仔细阅读并同意知晓！",
-			    });
-			</script>
-		<div class="background">
-			<canvas id="startrack"></canvas>
-			<div class="cover"></div>
-		</div>
-		<div class="main">
-			<div class="ch intro">
-				<div class="container">
-					<div class="hello">
-						<h1 id="slogan">您好！</h1>
-						<h2>
-							<div class="circle"> <span></span> <span></span>
-								<span></span>
-							</div>来自 - 艾希
-						</h2>
-					</div>
-				</div>
-			</div>
-			<div class="ch about">
-				<div class="container">
-					<h2 class="chtitle">你好 <span>陌生人</span></h2>
-					<div class="clear">
-						<div class="introduct">
-							<img class="avatar" src="images/logo.jpg">
-							<P> 这里永远是你的家</p>
-							<p style="padding-bottom:1em;">How lucky to meet you!</p>
-							<p>I am <sup>艾希</sup>我们趋行在人生这个亘古的旅行</p>
-							<p>就是要在坎坷中奔跑，在在挫折里涅槃</p>
-							<div class="chatbox">
-								<div class="line loading"> <span></span>
-									<span></span> <span></span>
-								</div>
-							</div>
-						</div>
-						<ul class="skill clear">
-							<li>
-								<p>高性能服务器</p>
-								<div class="progress">
-									<div style="width:55%;"></div>
-									<span>极致的云上体验</span>
-								</div>
-							</li>
-							<li>
-								<p>资源共享</p>
-								<div class="progress">
-									<div style="width:98%;"></div>
-									<span>美好的事情总是从共享开始的</span>
-								</div>
-							</li>
-							<li>
-								<p>网站搭建</p>
-								<div class="progress">
-									<div style="width:65%;">
-									</div><span>享受一条龙服务</span>
-								</div>
-							</li>
-							<li>
-								<p>货源对接</p>
-								<div class="progress">
-									<div style="width:20%;"></div>
-									<span>源头从这里开始</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="find ch">
-				<div class="container links">
-					<h2 class="chtitle">I love you <span>three thousand times</span></h2>
-					<div class="clear col-3">
-						<a href="https://qm.qq.com/q/cLDsmGlIcg" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#28a9e0"></div>
-								<div class="inner">  <span>售后客服</span> </div>
-							</div>
-						</a> 
-						<a href="https://qm.qq.com/q/VU17EAKukw" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#28a9e0"></div>
-								<div class="inner"> <span>售后Q群</span> </div>
-							</div>
-						</a> 
-						<a  target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#28a9e0"></div>
-								<div class="inner"><span>点击按钮跳转</span> </div>
-							</div>
-						</a> 
-					</div>
-					<div class="clear">
-						<a href="https://one.io31.top" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#e6162d"></div>
-								<div class="inner"> <i class="icon-instagram"></i><span>导航</span> </div>
-							</div>
-						</a>
-						<a href="https://pan.io31.top" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#28a9e0"></div>
-								<div class="inner"><i class="icon-instagram"></i>  <span>网盘</span> </div>
-							</div>
-						</a>
-						<a href="https://blog.io31.top" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#0f88eb"></div>
-								<div class="inner">  <i class="icon-instagram"></i> <span>博客</span> </div>
-							</div>
-						</a>
-						<a href="https://www.itdog.cn/tcping/" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#28a9e0"></div>
-								<div class="inner"> <i class="icon-instagram"></i> <span>在线tcp测速</span> </div>
-							</div>
-						</a> 
-						<a href="https://io31.github.io/pt/" target="_blank">
-							<div class="item">
-								<div class="bg"  style="background-color:#e6162d"></div>
-								<div class="inner"><i class="icon-instagram"></i>
-									<span>在线拼图</span>
-								</div>
-							</div>
-						</a>
-						<a href="https://poki.cn/" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#f12d35"></div>
-								<div class="inner"> <i class="icon-instagram"></i> <span>免费在线游戏</span> </div>
-							</div>
-						</a>
-						<a href="https://io31.github.io/ewm/" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#f12d35"></div>
-								<div class="inner"> <i class="icon-instagram"></i>
-									<span>二维码生成</span>
-								</div>
-							</div>
-						</a>
- 						<a href="https://io31.github.io/xck/" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#0f88eb"></div>
-								<div class="inner"> <i class="icon-instagram"></i>
-									<span>行程卡纪念版</span>
-								</div>
-							</div>
-						</a> 
-						<a href="https://io31.github.io/xn/" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#f12d35"></div>
-								<div class="inner"> <i class="icon-instagram"></i> <span>手机性能测试</span> </div>
-							</div>
-						</a>
-						<a href="https://sh520i.github.io/dh/sp.html" target="_blank">
-							<div class="item">
-								<div class="bg" style="background-color:#f12d35"></div>
-								<div class="inner"> <i class="icon-instagram"></i> <span>随机电影观看</span> </div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="gate ch">
-				<div class="container links">
-					<div class="footer ch">
-						<div class="container">
-							<h3>只要许愿</h3>
-							<p>就会成功，对吧</p>
-							<p class="c"><a href="https://beian.miit.gov.cn/">2018-2024 </a></p>
-						</div>
-					</div>
-					<script src="js/page.3a0791a3.js"></script>
-					<script type="text/javascript" src="js/stats.js" charset="UTF-8">
-					</script>
-					<!--点击特效 -->
-			<canvas class="fireworks"
-				style="position: fixed; left: 0px; top: 0px; z-index: 99999999; pointer-events: none; width: 1153px; height: 746px;"
-				width="2306" height="1492">
-			</canvas>
-			<script type="text/javascript" src="./js/djtx.js"></script>
-
-	</body>
+		}
+		var isWeixin = is_weixin();
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement
+		.clientHeight;
+	
+		function loadHtml() {
+	
+			var div = document.createElement('div');
+			div.id = 'weixin-tip';
+			if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+				div.innerHTML =
+					'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="https://nim-nosdn.netease.im/MTExNTUxNzE=/bmltYV8zMzY4NzE2MzU4NV8xNjUwMTIyNTM4NDg0XzMxNWU1OGQwLTNlZjAtNDQ1ZC04NjQ5LTY3ZWFjNWM4MmE2YQ==?createTime=1650122538666" alt="Ten9团队出品"/></p>';
+			} else if (browser.versions.android) {
+				div.innerHTML =
+					'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="https://nim-nosdn.netease.im/MTExNTUxNzE=/bmltYV8zMzY4NzE2MzU4NV8xNjUwMTIyNTM4NDg0XzMxNWU1OGQwLTNlZjAtNDQ1ZC04NjQ5LTY3ZWFjNWM4MmE2YQ==?createTime=1650122538666" alt="Ten9团队出品"/></p>';
+			}
+			document.body.appendChild(div);
+		}
+	
+		function loadStyleText(cssText) {
+			var style = document.createElement('style');
+			style.rel = 'stylesheet';
+			style.type = 'text/css';
+			try {
+				style.appendChild(document.createTextNode(cssText));
+			} catch (e) {
+				style.styleSheet.cssText = cssText; //ie9以下
+			}
+			var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+			head.appendChild(style);
+		}
+		var cssText =
+			"#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+		if (isWeixin) {
+			loadHtml();
+			loadStyleText(cssText);
+		}
+	</script>
+</body>
 </html>
